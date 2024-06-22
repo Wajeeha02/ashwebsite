@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #0077b6;
+    /*font-family: "Alfa Slab One", serif;*/
+}
+.nav-bar{
+    display: flex;
+    padding: 1rem;
+    box-shadow:0 4px 20px #FAFAFA;
+    height: 50px;
+    font-weight: 500;
+  
+}
+.name-logo{
+    margin-left: 1rem;
+    flex-grow: 3;
+}
+.name-logo p ,name-logo p span{
+     font-weight: bold;
+}
+
+.nav-links{
+    flex-grow: 1; 
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #03045e;
+    padding: 1rem 3rem; 
+}
+.nav-links a:hover{
+  
+    color: #0077b6;
+}
+.toggle-btn{
+    display: none;
+}
+/* Add this CSS to show/hide the nav-links */
+.nav-links ul {
+    padding: 0; /* Reset padding */
+    display: none; /* Hide by default */
+}
+
+.nav-links ul.show {
+    display: block; /* Show when 'show' class is applied */
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        height: auto; /* Remove fixed height */
+        flex-direction: column; /* Change flex-direction to column for smaller screens */
+        justify-content: flex-start; /* Align items to the start */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .toggle-btn {
+        display: block;
+        background-color: transparent;
+        color: #0077b6;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        right: 1rem; /* Position fixed to the right */
+        top: 1rem; /* Adjust top position as needed */
+        padding: 0.5rem 1rem; /* Add padding to make the button clickable */
+        border: none; /* Remove border */
+        z-index: 999; /* Ensure button appears on top */
+    }
+
+    .name-logo {
+        text-align: left; /* Align the name logo to the left */
+        margin-bottom: 1rem; /* Add margin bottom to create space */
+        margin-left: 2.5rem;
+    }
+
+    .nav-links {
+        text-align: left; /* Align the nav-links to the left */
+    }
+
+    .nav-links ul {
+        padding: 0; 
+    }
+
+    .nav-links ul li {
+        display: block; 
+        margin-bottom: 1rem; 
+    }
+    
+}

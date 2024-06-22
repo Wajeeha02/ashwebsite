@@ -1,0 +1,245 @@
+/* Home.css */
+
+.home-1 {
+    display: flex;
+    padding: 2rem;
+    height: 550px;
+    
+}
+
+.home-left {
+    flex-grow: 2; /* Increase the flex-grow value to take more space */
+    padding: 3rem;
+    max-width: 60%;
+    margin-top: 5rem;
+}
+
+.home-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-left h1 span {
+    color: #4f6781; /* Assuming you want the span to have a blue color */
+}
+
+.home-left p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.home-left button {
+    background-color: #4f6781;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.home-right {
+    flex-grow: 2; /* Adjust flex-grow to 1 to allow the image to take remaining space */
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+}
+
+.home-right img {
+    margin-top: 3rem;
+    box-shadow: 0 4px 10px rgb(185, 185, 185);
+    width: 90%;
+    object-fit: cover;
+}
+
+/*Home 2*/
+.home-2 {
+    display: flex;
+    padding: 2rem;
+    height: 550px;
+}
+.home2-left{
+    flex-grow: 1; /* Adjust flex-grow to 1 to allow the image to take remaining space */
+    display: flex;
+    justify-content: flex-start; /* Align the image to the right */
+}
+.home2-left img {
+    margin-top: 3rem;
+    box-shadow: 0 4px 10px rgb(185, 185, 185);
+    width: 80%;
+    object-fit: cover;
+}
+.home2-right {
+    flex-grow: 1; /* Increase the flex-grow value to take more space */
+    padding: 3rem;
+    max-width: 40%;
+}
+.home2-right p{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/*Home 3*/
+.home-3 {
+    display: flex;
+    padding: 2rem;
+    height: 550px;
+}
+
+.home3-left {
+    flex-grow: 2; /* Increase the flex-grow value to take more space */
+    padding: 3rem;
+    max-width: 40%;
+}
+
+.home3-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.home3-left p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+.home3-right {
+    flex-grow: 2; /* Adjust flex-grow to 1 to allow the image to take remaining space */
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+}
+
+.home3-right img {
+    margin-top: 3rem;
+    box-shadow: 0 4px 10px rgb(185, 185, 185);
+    width: 70%;
+    object-fit: cover;
+}
+
+
+/*Process*/
+.process-heading h1,.process-heading h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+.process-cards{
+   display: flex;
+   flex-direction:row ;
+   justify-content: space-around;
+   padding: 2rem;
+   cursor: pointer;
+}
+.choose,.meeting,.custom,.final{
+    padding: 2rem;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(214, 229, 241);
+    box-shadow: 0 4px 10px rgb(185, 185, 185);
+    font-size: 0.7rem;
+}
+.choose p,.meeting p,.custom p,.final p{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+.choose i,.meeting i,.custom i,.final i{
+    font-size: 2.5rem;
+   
+}
+
+/*Services*/
+.services-heading h1,.services-heading h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+.services-cards{
+   display: flex;
+   flex-direction:row ;
+   justify-content: space-around;
+   padding: 2rem;
+   cursor: pointer;
+}
+.web,.app,.graphics{
+    padding: 2rem;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(241, 244, 246);
+    box-shadow: 0 4px 10px rgb(185, 185, 185);
+    font-size: 0.7rem;
+}
+.web p,.graphics p,.app p{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+.web i,.app i,.graphics i{
+    font-size: 2.5rem;
+   
+}
+
+.heading-bottom{
+    margin-top:2rem ;
+    background-color: rgb(241, 244, 246);
+    background-color: rgb(55, 55, 79);
+    height: 150px;
+    text-align: center;
+    padding: 1rem;
+}
+.heading-bottom button{
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-1, .home-2, .home-3 {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-left, .home-right, .home2-left, .home2-right, .home3-left, .home3-right {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .home-left h1, .home3-left h1 {
+        font-size: 2rem;
+    }
+
+    .home-left p, .home2-right p, .home3-left p {
+        font-size: 1rem;
+    }
+
+    .home-right img, .home2-left img, .home3-right img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .choose, .meeting, .custom, .final, .web, .app, .graphics {
+        width: 80%;
+        height: auto;
+     
+        margin: 0 auto;
+        margin-top: 1.5rem;
+       
+    }
+    .services-cards,.process-cards{
+        flex-direction: column;
+      
+        
+    }
+
+    .choose p, .meeting p, .custom p, .final p, .web p, .app p, .graphics p {
+        font-size: 1rem;
+    }
+
+    .choose i, .meeting i, .custom i, .final i, .web i, .app i, .graphics i {
+        font-size: 2rem;
+    }
+
+    .heading-bottom {
+        height: auto;
+    }
+
+    .heading-bottom button {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
