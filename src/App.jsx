@@ -7,6 +7,7 @@ import Footer from "./Footer/Footer.jsx";
 import Home from "./Home/Home.jsx";
 import Navbar from "./Navbar/Navbar.jsx";
 import Services from "./Services/Services.jsx";
+// checking
 function App() {
   return (
     <div>
